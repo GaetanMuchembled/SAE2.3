@@ -1,0 +1,75 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lbl_Txt.Text" xml:space="preserve">
+    <value>Afin d'utiliser au mieux ce calculateur de masque, il faut respecter certaines règles :
+- les réseaux doivent être compris entre 0 et 223 pour leurs valeur décimale; c'est à dire qu'ils doivent être de classe A, B ou C
+- quand une adresse IP commence à être saisie (en décimal, en bianire ou en hexadécimal), elle doit être finie de saisie dans
+ce format (les autres lignes de saisie se désactivent)
+- comme pour l'adresse IP, le masque ne peut être saisie qu'en décimal OU en CIDR, il n'est pas possible de saisir les deux en même
+temps (la saisie d'une valeur dans un des deux formats désactive la saisie dans l'autre format)
+- si une adresse IP de classe D ou E est saisie, il sera impossible de calculer le réseau. Un message d'erreur s'affiche donc pour en
+l'utilisateur
+- pour la saisie de l'adresse IP en décimal, il faut que les adresses soient comprises entre 0 et 255, entre 00 et FF en hexadécimal 
+(obligatoirement 2 caractères et en majuscule pour les lettres), et entre 00000000 et 11111111 en décimal (obligatoirement 8
+caractères et uniquement des 0 et des 1)
+- de manière générale, si une valeur incorrecte est saisie, il est impossible de calculer le réseau, et l'erreur est mise en avant en rouge
+- une fois que toutes les informations nécessaires sont entrées, le bouton "Valider" s'active afin de laisser l'utilisateur calculer le réseau</value>
+  </data>
+</root>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Sae 2.3 Réseau/1.0.0": {
+        "runtime": {
+          "Sae 2.3 Réseau.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sae 2.3 Réseau/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
